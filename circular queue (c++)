@@ -33,7 +33,7 @@ class circularqueue{
         return true;
     }
     int dequeue(){
-        //check queue is empty or not
+        // Write your code here.
         //check empty or not
         if(front==-1){
             //cout<<"empty";
@@ -52,14 +52,4 @@ class circularqueue{
         }
         return ans;
     }
-    bool isEmpty() {
-    return front == -1; // Queue is empty if front is -1
-}
-int qfront() {
-    if (isEmpty()) {
-        cout << "Queue is empty" << endl;
-        return -1;
-    }
-    return arr[front];
-}
 };
