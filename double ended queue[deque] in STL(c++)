@@ -1,0 +1,23 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    // Write C++ code here
+    deque<int>d;
+    d.push_front(3);
+    d.push_back(4);
+    cout << "top " << d.front() << endl;
+    cout << "back " << d.back() << endl;
+    d.pop_back();
+    cout << "top " << d.front() << endl;
+    cout << "back " << d.back() << endl;
+    //d.pop_back();
+    if (d.empty()) { // Corrected check for queue not being empty
+        cout << "Queue is empty" << endl;
+    } 
+    else {
+        cout << "Queue is not empty" << endl; // Corrected message for empty queue
+    }
+    //cout<<q<<endl;
+    return 0;
+}
